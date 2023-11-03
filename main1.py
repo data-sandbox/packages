@@ -2,10 +2,12 @@
 from sound.effects import echo
 from sound.filters import equalizer
 
-# Alternative approach (but less preferred because *):
+# Alternative approach (not recommended for production):
 # from sound.effects import *
 # from sound.filters import *
-# In this case __init__.py in sound directory can be empty
+
+# Yet another alternative:
+# from sound.effects.echo import func1
 
 # Call package functions
 print(echo.func1(1, 2))
